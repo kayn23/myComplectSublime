@@ -1,0 +1,17 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AutoFileName",
+		"Emmet",
+		"Emmet Css Snippets",
+		"Hayaku - tools for writing CSS faster",
+		"jQuery",
+		"Material Theme",
+		"Package Control",
+		"Placeholders"
+	]
+}
