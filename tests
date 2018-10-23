@@ -41,3 +41,44 @@ FOR TAX/FEE DETAILS USE TWD/TAX
 TOTALTAX   RUB      2872                                                        
 TX01 RUB       888YR  TX02 RUB       198RI  TX03 RUB      1512GE                
 TX04 RUB       274JA  
+
+
+
+               
+ OD-OMSOMS  SI-      FCPI-0   POI-SVX  DOI-11OCT18  IOI-00777534                
+   1.ALDEKEKUZBAYEVA/GAUKHAR   ADT            S I                               
+ 1 OOMS U6 388   W 31OCT0735 OK WECRT         O              1PC                
+ 2 ODME U67029   W 31OCT0955 OK WECIRT        O        08NOV 1PC                
+ 3 OLCA U67032   P 05NOV1540 OK PECIRT        O   03NOV08FEB 1PC                
+ 4 ODME U6 387   W 05NOV2315 OK WECRT         O              1PC                
+    OMS                                                                         
+FARE   F EUR       218.00                                                       
+EQUIV    RUB        16790       BSR    77.000000                                
+TOTALTAX RUB        12143                                                       
+TOTAL    RUB        28933                                                       
+/FC OMS U6 MOW42.64U6 LCA59.71U6 MOW107.24U6 OMS42.64NUC252.23EN                
+D ROE0.862490                                                                   
+FE NONENDORSABLE                                                                
+FP EXTVI404243XXXXXX4844                                                        
+FOR TAX/FEE DETAILS USE TWD/TAX                                                 
+
+TOTALTAX   RUB     12143                                                        
+TX01 RUB      2156YR  TX02 RUB      7518YQ  TX03 RUB       172RI                
+TX04 RUB       172RI  TX05 RUB       130RI  TX06 RUB       130RI                
+TX07 RUB      1479CY  TX08 RUB       120JX  TX09 RUB       266JW
+
+
+
+ OMS                                                                            
+ MOW U6   388 W  W 31OCT 0735  WECRT                      1P                    
+ LCA U6  7029 W  W 31OCT 0955  WECIRT               08NOV 1P                    
+ MOW U6  7032 P  P 05NOV 1540  PECIRT          03NOV08FEB 1P                    
+ OMS U6   387 W  W 05NOV 2315  WECRT                      1P                    
+                                                                                
+EUR   220.00      31OCT18OMS U6 MOW42.64U6 LCA62.02U6 MOW                       
+RUB    16830      107.24U6 OMS42.64NUC254.54END ROE0.862490                     
+RUB     2148-YR   XT RUB 130-RI RUB 130-RI RUB 172-RI RUB                       
+RUB     7496-YQ   172-RI RUB 1469-CY RUB 120-JX RUB 264-JW                      
+RUB     2457-XT                                                                 
+RUB    28931                                                                    
+RATE USED 1EUR=76.50000RUB                                                      
