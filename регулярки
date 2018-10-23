@@ -1,0 +1,72 @@
+тест для парсинга по таксам из билета
+/*
+PD01 RUB       736YR  PD02 RUB      4410YQ  PD03 RUB       304RI                
+PD04 RUB       304RI  PD05 RUB        68E7  PD06 RUB        29G8                
+PD07 RUB        68E7  PD08 RUB        29G8  PD09 RUB      1346TS
+*/
+
+\D{2}\d{2}\s\D{3}\s+\w+
+out
+[
+  PD01 RUB       736YR,
+  PD02 RUB      4410YQ,
+  ...
+]
+
+(?<=.{5})[a-z]{3}
+test
+PD01 RUB       736YR
+out
+[RUB]
+
+(?<=\s)[0-9]+
+test
+PD01 RUB       736YR
+out
+[736]
+
+\w{2}(?=$)
+test
+PD01 RUB       736YR
+out
+[YR]
+
+
+новый расчет
+/(?<=^.{18}).+(?!\s|$)./gmi
+парсит 
+RUB     1148-YR   XT RUB 358-RI RUB 358-RI RUB 72-E7 RUB 31                     
+RUB     4590-YQ   -G8 RUB 72-E7 RUB 31-G8 RUB 1434-TS
+в итоге 
+[
+  XT RUB 358-RI RUB 358-RI RUB 72-E7 RUB 31,
+  -G8 RUB 72-E7 RUB 31-G8 RUB 1434-TS
+]
+
+/\w{3}\s[0-9]+\-\w{2}/gmi
+test
+XT RUB 358-RI RUB 358-RI RUB 72-E7 RUB 31-G8 RUB 72-E7 RUB 31-G8 RUB 1434-TS
+out
+[
+  RUB 358-RI,
+  RUB 358-RI,
+  RUB 72-E7,
+  RUB 31-G8,
+  RUB 72-E7,
+  RUB 31-G8,
+  RUB 1434-TS
+]
+
+
+/\d+(?=\-)/gmi
+test
+RUB 358-RI
+RUB 72-E7
+out
+[358]
+[72]
+/(?<=\-).{2}/gmi
+test выше
+out
+[ri]
+[e7]
